@@ -5,12 +5,12 @@ Summary:	Set::Hashed Perl module - yet another extension for set operations
 Summary(pl):	Modu³ Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
 Name:		perl-Set-Hashed
 Version:	0.07
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.ling.uni-potsdam.de/~moocow/projects/diplom/modules/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +30,8 @@ byæ trochê szybszy tam, gdzie funkcjonalno¶æ siê pokrywa.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -45,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Set/Hashed.pm
+%{perl_vendorlib}/Set/Hashed.pm
 %{_mandir}/man3/*
