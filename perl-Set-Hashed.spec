@@ -3,8 +3,8 @@
 %bcond_without  tests   # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Set
-%define		pnam	Hashed
+%define	pdir	Set
+%define	pnam	Hashed
 Summary:	Set::Hashed Perl module - yet another extension for set operations
 Summary(pl):	Modu³ Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
 Name:		perl-Set-Hashed
