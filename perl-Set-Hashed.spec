@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without  tests   # do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Set
 %define		pnam	Hashed
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na
 Name:		perl-Set-Hashed
 Version:	0.07
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.ling.uni-potsdam.de/~moocow/projects/diplom/modules/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f8558db56028508d34e7b6fd72cd6536
@@ -34,6 +39,8 @@ byæ trochê szybszy tam, gdzie funkcjonalno¶æ siê pokrywa.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
