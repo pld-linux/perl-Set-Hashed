@@ -20,7 +20,7 @@ Set::Hashed provides set operations for scalars (including references)
 based on an internal representation as a hash. It provides a subset
 (sic) of the functionality provided by the Set::Scalar module, and
 seems to be slightly faster where the functionality overlaps.
-		
+
 %description -l pl
 Modu³ Set::Hashed udostêpnia operacje na zbiorach dla skalarów (wraz z
 referencjami) bazuj±ce na wewnêtrznej reprezentacji jako hasza. Modu³
@@ -32,7 +32,7 @@ byæ trochê szybszy tam, gdzie funkcjonalno¶æ siê pokrywa.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
