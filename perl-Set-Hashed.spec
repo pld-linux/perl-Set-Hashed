@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	Hashed
 Summary:	Set::Hashed Perl module - yet another extension for set operations
-Summary(pl):	Modu³ Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
+Summary(pl.UTF-8):   ModuÅ‚ Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
 Name:		perl-Set-Hashed
 Version:	0.07
 Release:	3
@@ -26,11 +26,11 @@ based on an internal representation as a hash. It provides a subset
 (sic) of the functionality provided by the Set::Scalar module, and
 seems to be slightly faster where the functionality overlaps.
 
-%description -l pl
-Modu³ Set::Hashed udostêpnia operacje na zbiorach dla skalarów (wraz z
-referencjami) bazuj±ce na wewnêtrznej reprezentacji jako hasza. Modu³
-ten daje podzbiór funkcjonalno¶ci modu³u Set::Scalar, ale wydaje siê
-byæ trochê szybszy tam, gdzie funkcjonalno¶æ siê pokrywa.
+%description -l pl.UTF-8
+ModuÅ‚ Set::Hashed udostÄ™pnia operacje na zbiorach dla skalarÃ³w (wraz z
+referencjami) bazujÄ…ce na wewnÄ™trznej reprezentacji jako hasza. ModuÅ‚
+ten daje podzbiÃ³r funkcjonalnoÅ›ci moduÅ‚u Set::Scalar, ale wydaje siÄ™
+byÄ‡ trochÄ™ szybszy tam, gdzie funkcjonalnoÅ›Ä‡ siÄ™ pokrywa.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
