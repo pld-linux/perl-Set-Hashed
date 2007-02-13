@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	Hashed
 Summary:	Set::Hashed Perl module - yet another extension for set operations
-Summary(pl.UTF-8):   Moduł Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
+Summary(pl.UTF-8):	Moduł Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
 Name:		perl-Set-Hashed
 Version:	0.07
 Release:	3
