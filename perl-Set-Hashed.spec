@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Set
 %define		pnam	Hashed
+%include	/usr/lib/rpm/macros.perl
 Summary:	Set::Hashed Perl module - yet another extension for set operations
 Summary(pl.UTF-8):	Moduł Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
 Name:		perl-Set-Hashed
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.ling.uni-potsdam.de/~moocow/projects/diplom/modules/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f8558db56028508d34e7b6fd72cd6536
+URL:		http://search.cpan.org/dist/Set-Hashed/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
