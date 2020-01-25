@@ -4,7 +4,6 @@
 
 %define		pdir	Set
 %define		pnam	Hashed
-%include	/usr/lib/rpm/macros.perl
 Summary:	Set::Hashed Perl module - yet another extension for set operations
 Summary(pl.UTF-8):	Moduł Perla Set::Hashed - jeszcze jedno rozszerzenie do operacji na zbiorach
 Name:		perl-Set-Hashed
